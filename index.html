@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Álbum de Gatos</title>
+  <style>
+      body {
+      background: linear-gradient(45deg, #e0d4cd, #f6f4f2); /* Gradiente linear em tons pastéis */
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      font-family: Arial, sans-serif;
+      font-size: 36px;
+      color: #555;
+      text-align: center;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.8); /* Fundo branco semi-transparente */
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    }
+      .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .grid-item {
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-bottom: 100%; /* Define a proporção de aspecto das imagens */
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .grid-item img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .grid-item:hover {
+      transform: scale(1.2); /* Aumenta o tamanho em 20% quando o mouse está em cima */
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Álbum de Gatos</h1>
+  <div class="grid-container">
+    <div class="grid-item">
+      <img src="./assets/gato1.jpg" alt="Gato 1">
+    </div>
+    <div class="grid-item">
+      <img src="./assets/gato2.jpg" alt="Gato 2">
+    </div>
+    <div class="grid-item gato3">
+      <img src="./assets/gato3.jpg" alt="Gato 3">
+    </div>
+    <div class="grid-item">
+        <img src="./assets/gato4.jpg" alt="Gato 4">
+      </div>
+      <div class="grid-item">
+        <img src="./assets/gato5.jpg" alt="Gato 5">
+      </div>
+      <div class="grid-item">
+        <img src="./assets/gato6.jpg" alt="Gato 6">
+      </div>
+      <div class="grid-item gato7c">
+        <img src="./assets/gato7.jpg" alt="Gato 7">
+      </div>
+      <div class="grid-item">
+        <img src="./assets/gato8.jpg" alt="Gato 8">
+      </div>
+      <div class="grid-item">
+        <img src="./assets/gato9.jpg" alt="Gato 9">
+      </div>
+      <div class="grid-item">
+        <img src="./assets/gato10.jpg" alt="Gato 10">
+      </div>
+  </div>
+</body>
+</html>
